@@ -1,0 +1,9 @@
+{
+  "name": "MAHU INTERIOR Labour Manager",
+  "short_name": "MAHU Labour",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f4f0e7",
+  "theme_color": "#171717",
+  "description": "MAHU INTERIOR branded offline labour attendance, wages, payments and expense tracker"
+}

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'mahu-labour-manager-v3.0.1';
+const CACHE_NAME = 'mahu-labour-manager-v3.1.0';
 const APP_FILES = ['./', './index.html', './manifest.webmanifest', './mahu-logo.jpg'];
 self.addEventListener('install', event => event.waitUntil((async()=>{const c=await caches.open(CACHE_NAME);await c.addAll(APP_FILES);await self.skipWaiting()})()));
 self.addEventListener('activate', event => event.waitUntil((async()=>{const names=await caches.keys();await Promise.all(names.filter(n=>n!==CACHE_NAME).map(n=>caches.delete(n)));await self.clients.claim()})()));
